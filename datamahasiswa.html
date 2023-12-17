@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Contoh Tabel HTML dengan Formulir Input</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="datamahasiswa.css"
+  />
+  <body>
+    <h2>Data Mahasiswa</h2>
+
+    <form>
+      <div class="container cf">
+        <div class="kiri">
+          <label for="nim">Nama:</label>
+          <input
+            type="text"
+            id="nim"
+            name="nim"
+            required
+          />
+
+          <label for="nama">Nim:</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            required
+          />
+
+          <label for="Fakultas">Fakultas:</label>
+          <input
+            type="text"
+            id="Fakultas"
+            name="Fakultas"
+            required
+          />
+        </div>
+        <div class="kanan">
+          <label for="Jurusan">Jurusan:</label>
+          <input
+            type="text"
+            id="Jurusan"
+            name="Jurusan"
+            required
+          />
+
+          <label for="Notlpn">No telpn:</label>
+          <input
+            type="text"
+            id="Notlpn"
+            name="Notlpn"
+            required
+          />
+
+          <label for="Email">Email:</label>
+          <input
+            type="text"
+            id="Email"
+            name="Email"
+            required
+          />
+        </div>
+      </div>
+    </form>
+    <button
+      type="submit"
+      onclick="addData()"
+    >
+      Tambah Data
+    </button>
+
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Nim</th>
+          <th>Fakultas</th>
+          <th>Jurusan</th>
+          <th>No tlpn</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data akan ditambahkan secara dinamis melalui JavaScript -->
+      </tbody>
+    </table>
+    <script
+      src="datamahasiswa.js"
+      ;
+    ></script>
+  </body>
+</html>
